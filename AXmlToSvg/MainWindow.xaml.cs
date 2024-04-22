@@ -1,5 +1,6 @@
 ﻿using AXmlToSvg.Pages;
 using System.Windows;
+using System.Windows.Media;
 
 namespace AXmlToSvg
 {
@@ -11,6 +12,8 @@ namespace AXmlToSvg
         public MainWindow()
         {
             InitializeComponent();
+
+            Mw.FontFamily = LoadFont();
         }
 
         private void SingleFileModeBtn_Click(object sender, RoutedEventArgs e)
@@ -41,6 +44,15 @@ namespace AXmlToSvg
         {
             MultiFile multiFile = new();
             return multiFile;
+        }
+
+        private static FontFamily LoadFont()
+        {
+            string LXGWWenKai = "pack://application:,,,/AXmlToSvg;component/Fonts/LXGWWenKai-Regular.ttf";
+
+            FontFamily customFont = new(new Uri(LXGWWenKai), "./#LXGWWenKai-Regular.ttf");
+
+            return customFont;
         }
     }
 }
