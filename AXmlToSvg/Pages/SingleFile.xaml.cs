@@ -61,15 +61,30 @@ namespace AXmlToSvg
             OutputFileTextBox.Clear();
         }
 
-        private void ExportBtn_Click(object sender, RoutedEventArgs e)
+        private async void ExportBtn_Click(object sender, RoutedEventArgs e)
         {
-            SyncConvert.Convert(InputFileTextBox.Text, OutputFileTextBox.Text);
-            OutputTextBox.Text = SyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
+            if (UseAsyncCheckBox.IsChecked == true)
+            {
+                await AsyncConvert.Convert(InputFileTextBox.Text, OutputFileTextBox.Text);
+                OutputTextBox.Text = await AsyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
+            }
+            else
+            {
+                SyncConvert.Convert(InputFileTextBox.Text, OutputFileTextBox.Text);
+                OutputTextBox.Text = SyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
+            }
         }
 
-        private void ViewBtn_Click(object sender, RoutedEventArgs e)
+        private async void ViewBtn_Click(object sender, RoutedEventArgs e)
         {
-            OutputTextBox.Text =  SyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
+            if (UseAsyncCheckBox.IsChecked == true)
+            {
+                OutputTextBox.Text = await AsyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
+            }
+            else
+            {
+                OutputTextBox.Text = SyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
+            }
         }
     }
 }
