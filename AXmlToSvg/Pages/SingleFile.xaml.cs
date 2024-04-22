@@ -1,4 +1,5 @@
 ﻿using AXmlToSvg.Fonts;
+using ConvertPak;
 using Microsoft.Win32;
 using System.IO;
 using System.Windows;
@@ -11,8 +12,8 @@ namespace AXmlToSvg
     /// </summary>
     public partial class SingleFile : Page
     {
-        string getInputError = "选择输入文件失败";
-        string getOutputError = "无输入文件，生成输出文件失败";
+        readonly string getInputError = "选择输入文件失败";
+        readonly string getOutputError = "无输入文件，生成输出文件失败";
 
         public SingleFile()
         {
@@ -58,6 +59,17 @@ namespace AXmlToSvg
         {
             InputFileTextBox.Clear();
             OutputFileTextBox.Clear();
+        }
+
+        private void ExportBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SyncConvert.Convert(InputFileTextBox.Text, OutputFileTextBox.Text);
+            OutputTextBox.Text = SyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
+        }
+
+        private void ViewBtn_Click(object sender, RoutedEventArgs e)
+        {
+            OutputTextBox.Text =  SyncConvert.View(InputFileTextBox.Text, OutputFileTextBox.Text);
         }
     }
 }

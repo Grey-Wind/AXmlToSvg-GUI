@@ -20,4 +20,8 @@
     <Content Include="Fonts\YouSheTitleBlack.ttf" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ConvertPak\ConvertPak.csproj" />
+  </ItemGroup>
+
 </Project>

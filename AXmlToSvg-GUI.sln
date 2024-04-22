@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AXmlToSvg", "AXmlToSvg\AXmlToSvg.csproj", "{381B5096-B866-40C1-90F5-D45499219A68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertPak", "ConvertPak\ConvertPak.csproj", "{3DD2D67F-E34A-4D79-A922-D01AC36E96AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{381B5096-B866-40C1-90F5-D45499219A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{381B5096-B866-40C1-90F5-D45499219A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{381B5096-B866-40C1-90F5-D45499219A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD2D67F-E34A-4D79-A922-D01AC36E96AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD2D67F-E34A-4D79-A922-D01AC36E96AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD2D67F-E34A-4D79-A922-D01AC36E96AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD2D67F-E34A-4D79-A922-D01AC36E96AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
