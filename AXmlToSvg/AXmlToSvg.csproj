@@ -10,12 +10,14 @@
 
   <ItemGroup>
     <None Remove="Fonts\LXGWWenKai-Regular.ttf" />
+    <None Remove="Fonts\YouSheTitleBlack.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Fonts\LXGWWenKai-Regular.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fonts\YouSheTitleBlack.ttf" />
   </ItemGroup>
 
 </Project>
