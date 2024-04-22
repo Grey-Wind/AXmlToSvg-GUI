@@ -3,10 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AXmlToSvg"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="AXML To SVG - GUI"
+        Height="450" Width="800"
+        MinWidth="800" MinHeight="450"
+        MaxWidth="800" MaxHeight="450"
+        FontFamily="./#LXGWWenKai-Regular.ttf">
     <Grid>
-
+        <ToolBar x:Name="ChooseModeToolBar" HorizontalAlignment="Center" Height="25" VerticalAlignment="Top" Width="800" Header="模式选择" Background="White" FontWeight="Bold">
+            <Button x:Name="SingleFileModeBtn" Content="单文件模式" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Normal" Click="SingleFileModeBtn_Click"/>
+            <Button x:Name="MultiFileModeBtn" Content="多文件模式" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Normal" Click="MultiFileModeBtn_Click"/>
+        </ToolBar>
+        <Grid x:Name="PageGrid" Margin="0,25,0,0">
+            <Frame x:Name="PageFrame" NavigationUIVisibility="Hidden"/>
+        </Grid>
     </Grid>
 </Window>

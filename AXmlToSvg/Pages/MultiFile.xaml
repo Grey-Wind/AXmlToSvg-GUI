@@ -1,0 +1,14 @@
+﻿<Page x:Class="AXmlToSvg.Pages.MultiFile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      Title="MultiFile">
+
+    <Grid>
+        <Label Content="未製作好&#xD;&#xA;等著" HorizontalAlignment="Left" Margin="73,61,0,0" VerticalAlignment="Top"/>
+        <!--Margin最低0,360,0,0-->
+    </Grid>
+</Page>
