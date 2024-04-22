@@ -1,4 +1,4 @@
-﻿<Page x:Class="AXmlToSvg.SingleFile"
+﻿<Page x:Name="SgPg" x:Class="AXmlToSvg.SingleFile"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -9,5 +9,13 @@
 
     <Grid>
         <!--Margin最低0,360,0,0-->
+        <Label Content="输入文件：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,0"/>
+        <Label Content="输出文件：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,35,0,0"/>
+        <TextBox x:Name="InputFileTextBox" HorizontalAlignment="Left" Margin="75,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Background="Transparent" IsReadOnly="True" FontFamily="Arial"/>
+        <TextBox x:Name="OutputFileTextBox" HorizontalAlignment="Left" Margin="75,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Background="Transparent" FontFamily="Arial" IsReadOnly="True"/>
+        <Button x:Name="SelectInputFileBtn" Content="选择输入文件" HorizontalAlignment="Left" Margin="405,8,0,0" VerticalAlignment="Top" Width="100" Click="SelectInputFileBtn_Click"/>
+        <Button x:Name="ClearBtn" Content="清空" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="100" Click="ClearBtn_Click"/>
+        <Button x:Name="ViewBtn" Content="查看" HorizontalAlignment="Left" Margin="115,65,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="ExportBtn" Content="输出" HorizontalAlignment="Left" Margin="220,65,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Page>
