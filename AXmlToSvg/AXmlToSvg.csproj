@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Content Include="Fonts\LXGWWenKai-Regular.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
