@@ -3,6 +3,7 @@ using System.Windows;
 using AXmlToSvg.Fonts;
 using System.IO;
 using System.ComponentModel;
+using Ver;
 
 namespace AXmlToSvg
 {
@@ -21,6 +22,9 @@ namespace AXmlToSvg
 
             // 初始化字体
             Mw.FontFamily = LoadFont.LXGWWenKai();
+
+            // 初始化版本
+            Mw.Title += GetVersion.GetVer();
 
             // 初始化窗口
             PageFrame.Content = LoadSingleFilePage();
