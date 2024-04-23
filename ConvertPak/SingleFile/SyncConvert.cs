@@ -1,7 +1,7 @@
 ﻿using Picture.AXmlToSvg;
 using ReadContent;
 
-namespace ConvertPak
+namespace ConvertPak.SingleFile
 {
     public class SyncConvert
     {
