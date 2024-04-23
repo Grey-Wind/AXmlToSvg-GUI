@@ -41,8 +41,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConvertPak\ConvertPak.csproj" />
-    <ProjectReference Include="..\Ver\Ver.vbproj" />
+    <ProjectReference Include="..\ConvertPak\ConvertPak.csproj">
+      <Private>True</Private>
+      <CopyLocalSatelliteAssemblies>True</CopyLocalSatelliteAssemblies>
+    </ProjectReference>
+    <ProjectReference Include="..\Ver\Ver.vbproj">
+      <Private>True</Private>
+      <CopyLocalSatelliteAssemblies>True</CopyLocalSatelliteAssemblies>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
