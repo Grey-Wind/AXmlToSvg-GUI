@@ -1,7 +1,6 @@
 ﻿using AXmlToSvg.Fonts;
 using ConvertPak;
 using Microsoft.Win32;
-using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -59,8 +58,14 @@ namespace AXmlToSvg
         {
             InputFileTextBox.Clear();
             OutputFileTextBox.Clear();
+            OutputTextBox.Clear();
         }
 
+        /// <summary>
+        /// 导出SVG
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void ExportBtn_Click(object sender, RoutedEventArgs e)
         {
             if (UseAsyncCheckBox.IsChecked == true)
@@ -75,6 +80,11 @@ namespace AXmlToSvg
             }
         }
 
+        /// <summary>
+        /// 查看SVG文件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void ViewBtn_Click(object sender, RoutedEventArgs e)
         {
             if (UseAsyncCheckBox.IsChecked == true)

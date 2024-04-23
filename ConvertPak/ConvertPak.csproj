@@ -10,4 +10,8 @@
     <PackageReference Include="Picture.AXmlToSvg" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReadContent\ReadContent.vbproj" />
+  </ItemGroup>
+
 </Project>
